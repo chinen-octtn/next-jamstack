@@ -1,8 +1,9 @@
 import { Top } from '@/components/Pages/Top'
+import { client } from '@/utils/microCMS/client'
 
 // meta情報
-const title = 'Create Next App'
-const description = 'ページの説明'
+const title = 'TOPページ'
+const description = 'TOPページです。'
 
 export const metadata = {
   title: title,
@@ -17,6 +18,10 @@ export const metadata = {
   },
 }
 
-export default function Page() {
-  return <Top />
+export default async function Page() {
+  const news = await client.get({
+    endpoint: 'news',
+  })
+
+  return <Top data={news.contents} />
 }

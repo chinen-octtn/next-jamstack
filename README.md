@@ -2,9 +2,9 @@
 
 ## 動作確認済みスペック
 
-- Mac OS Ventura
-- Node.js v18.16.0
-- npm v9.5.1
+- Mac OS Sonoma 14.5
+- Node.js v20.10.0
+- npm v10.2.3
 
 ## 推奨エディタ
 

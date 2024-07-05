@@ -23,19 +23,9 @@ export default async function Page({
 }: {
   params: { id: string }
 }) {
-  console.log('id')
-  console.log(id)
   const post = await getDetail(id, {
     fields: 'id,title',
   })
-
-  console.log('post')
-  console.log(post)
-
-  const data = {
-    id: '1',
-    title: 'test',
-  }
 
   return <Detail data={post} />
 }

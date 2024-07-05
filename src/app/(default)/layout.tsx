@@ -5,9 +5,9 @@ export default function RootLayout({
 }) {
   return (
     <body>
-      <header>Header</header>
+      <header className="p-4 border-b-2">Header</header>
       {children}
-      <footer>Footer</footer>
+      <footer className="p-4 border-t-2">Footer</footer>
     </body>
   )
 }

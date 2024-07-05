@@ -58,10 +58,10 @@ export const Top = (props: Props) => {
         </li> */}
       </ul>
 
-      <h2 className="text-xl mt-16">/news/old/ディレクトリ</h2>
+      <h2 className="text-xl mt-16">/news-old/ディレクトリ</h2>
       <ul className="grid gap-y-4 w-full mt-8 border-t-2">
         <li>
-          <Link href="/news/old/test1/" className="p-4 block border-b-2">
+          <Link href="/news-old/test1/" className="p-4 block border-b-2">
             静的ページテスト1
           </Link>
         </li>

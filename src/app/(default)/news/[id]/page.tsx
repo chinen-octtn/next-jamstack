@@ -1,5 +1,6 @@
 import { Detail } from '@/components/Pages/Detail'
 import { getDetail } from '@/utils/microCMS/client'
+// import Redirect from '../redirect'
 
 // meta情報
 const title = 'TOPページ'
@@ -26,6 +27,14 @@ export default async function Page({
   const post = await getDetail(id, {
     fields: 'id,title',
   })
-
   return <Detail data={post} />
+  // try {
+  //   const post = await getDetail(id, {
+  //     fields: 'id,title',
+  //   })
+  //   return <Detail data={post} />
+  // } catch (error) {
+  //   // 404ページへリダイレクト
+  //   return <Redirect id={id} />
+  // }
 }
